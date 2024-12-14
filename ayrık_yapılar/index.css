@@ -1,0 +1,53 @@
+html{
+  height: 100%;}
+body{
+  margin : 0px ;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(135, 151, 165);
+}
+
+#general_div{
+  height: 90%;
+  background-color: rgb(87, 81, 81);
+  width: 90%;
+  border-radius: 10px;
+}
+#top_horizontal_div{
+  background-color: grey; 
+  height: 100px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#algorithms{
+  border-radius: 10px;
+  background-color: rgb(123, 141, 148);
+  border-width: 5px;
+  width: 10%;
+  height: 70%;
+  color: white;
+}
+#selected_method{
+  border-radius: 10px;
+  background-color: rgb(123, 141, 148);
+  border-width: 5px;
+  width: 10%;
+  height: 70%;
+  border-color: cyan;
+  color: white;
+}
+
+#calculate{
+  border-radius: 10px;
+  background-color: rgb(123, 141, 148);
+  border-width: 5px;
+  width: 10%;
+  height: 70%;
+  color: white;
+
+}
