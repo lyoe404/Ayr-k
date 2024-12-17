@@ -111,15 +111,12 @@ function isPrime(num) {
 function modularExponantion(value,pow,modulus){
 
   let result = 1;
-  value = value % modulus; // Base mod modulus
+  value = value % modulus;
 
   while (pow > 0) {
-    // If pow is odd, multiply result by value
     if (pow % 2 === 1) {
       result = (result * value) % modulus;
     }
-
-    // Now pow must be even, square the value and halve the pow
     pow = Math.floor(pow / 2);
     value = (value * value) % modulus;
   }
