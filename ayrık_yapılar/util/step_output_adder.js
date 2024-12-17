@@ -1,3 +1,5 @@
+// STEPADDER VISUALIZES RETURNING OBJECT
+// 
 export function step_output_Adder(result_object) {
   for (let i = 0 ; i < result_object.steps.length ; i++) {
 
@@ -11,6 +13,17 @@ export function step_output_Adder(result_object) {
     output_area.innerHTML += result_object.crypted_text[i];
     if (i< result_object.crypted_text.length - 1 )output_area.innerHTML += "-";
   }
+    var key_text = document.getElementById("key_text");
+    key_text.innerHTML = `Açık Anahtar = (${result_object.keys[0]},${result_object.keys[1]})`;
+    key_text.innerHTML += ` Özel Anahtar = (${result_object.keys[2]},${result_object.keys[1]})`;
+}
 
+export function decrypt_step_output_Adder(text) {
 
+  var key_text = document.getElementById("key_text");
+  key_text.innerHTML = "" ; 
+  key_text.innerHTML = "Orjinal Mesaj : " ;
+  for(let i = 0 ; i < text.length ; i++) {
+    key_text.innerHTML += text[i];
+  }
 }
