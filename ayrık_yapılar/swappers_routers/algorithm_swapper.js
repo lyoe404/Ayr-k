@@ -13,8 +13,9 @@ export function algorithm_swapper(algorithm,RsaBackUp,method) {
         var key2desc = document.getElementById("input_name_2");
         var key2val = document.getElementById("asal2");
         key1desc.innerHTML = "Key1" ; 
+        key1val.id = "key1";
         key2desc.innerHTML  = "Key2";
-
+        key2val.id = "key2";
         }
       }
 
