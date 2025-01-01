@@ -18,8 +18,8 @@ let object = {
 
 export function encryptRSA(prime1 ,prime2 ,text,method,key){
  
-     prime1 = prime1 || 11 ; 
-     prime2 = prime2 || 3 ;   
+     prime1 = prime1 || 3137 ; 
+     prime2 = prime2 || 2963 ;   
      key = key || 0 ;
   object.steps = [] ;
   object.crypted_text = [] ;  
@@ -111,7 +111,7 @@ function isPrime(num) {
 function modularExponantion(value,pow,modulus){
 
   let result = 1;
-  value = value % modulus;
+  value = value % modulus; 
 
   while (pow > 0) {
     if (pow % 2 === 1) {

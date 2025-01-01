@@ -40,8 +40,10 @@ export function algorithm_swapper(algorithm,RsaBackUp,method) {
           if (method == "encrypt") {
  document.getElementById("main_column_1").innerHTML = RsaBackUp ;
           document.getElementById("input_name_1").innerHTML = "viegenere";
-          document.getElementById("output_text").innerHTML = "" ; 
-          document.getElementById("steps_area").innerHTML = "";
+          document.getElementById("asal2").remove() ;  
+          document.getElementById("input_name_2").remove();
+          
+
           }
           if (method == "decrypt") {
             document.getElementById("output_text").innerHTML = "viegenere-decerypt" ; 

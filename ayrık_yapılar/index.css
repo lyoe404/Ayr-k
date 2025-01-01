@@ -123,10 +123,13 @@ body{
   text-align: center;
   background-color: beige;
 }
-
+#input_for_algorithms{
+  width: 100%;
+}
 #input_line{
   display: flex;
   flex-direction: row;
+  background-color: white;
   height: 50%;
   width: 100%;
 }

@@ -4,8 +4,7 @@
 import * as step_engine from "../util/step_output_adder.js";
 import * as RSA from "../algorithms/rsa_algorithm.js";
 import * as output_parser from "../util/output_parser.js";
-
-
+import * as viegene from "../algorithms/viegenere_algorithm.js"
 // ALGORITHM ROUTER
 export function algorithmRouter(algorithm,method){
 
@@ -51,8 +50,11 @@ if (method == "decrypt"){
   }
   if (algorithm == "Viegenere") {
     if (method == "encrypt") {
-      console.log("geldi");
-}
+        var anahtar = document.getElementById("asal1").value ;
+        var text = document.getElementById("input_box").value;
+        viegene.encryptViegenere(anahtar,text,method);
+
+    }
 if (method == "decrypt"){
       console.log("geldidecrypt");
 } 

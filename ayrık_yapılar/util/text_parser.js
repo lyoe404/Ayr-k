@@ -22,7 +22,6 @@ export function textParser(text) {
   "#", "+", "-", "%", "(", ")", "/", "%", "[", "]"
   ];
 
-  console.log(array);
     let index = turkceAlfabe.indexOf(array[i].toLowerCase());
 
     if (index != -1 ) return index + 1 ; 
